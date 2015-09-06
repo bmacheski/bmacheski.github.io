@@ -28,8 +28,6 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('public'));
   gulp.src('src/img/**/*')
     .pipe(gulp.dest('public/img'))
-  gulp.src('./index.html')
-    .pipe(gulp.dest('public'))
 });
 
 gulp.task('css', function(){
@@ -42,13 +40,13 @@ gulp.task('deploy', function () {
   return gulp.src("public/**/*")
     .pipe(deploy())
 });
-/*
+
 gulp.task('fonts', function() { 
-    return gulp.src('bower_components/font-awesome/fonts/*') 
+    return gulp.src('bower_components/font-awesome/fonts/**.*') 
       .pipe(gulp.dest('./public/fonts')); 
 });
-*/
+
 gulp.task('default', [], function() {});
-gulp.task('build:dev', ['clean', 'css', 'bower', 'copy']);
+gulp.task('build:dev', ['clean', 'fonts', 'css', 'bower', 'copy']);
 gulp.task('serve', ['build:dev']);
 
