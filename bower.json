@@ -1,0 +1,21 @@
+{
+  "name": "bmacheski.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bmacheski/bmacheski.github.io",
+  "authors": [
+    "bmacheski <bwm0007@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "jquery.stellar": "~0.6.2"
+  }
+}

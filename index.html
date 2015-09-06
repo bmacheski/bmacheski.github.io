@@ -8,40 +8,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type='text/css'>
+        <link href='fonts/font-awesome.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="lib/build.css">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div>
-            <div class="header-container">
-                <a href="https://github.com/bmacheski" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/pub/brian-macheski/104/902/4b2" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="mailto:bwm0007@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <div class="header-container" data-stellar-background-ratio="0.5">
                 <h1>Brian Macheski</h1>
                 <h4>Software Engineer</h4>
-                <p>Nashville, TN</p>
             </div>
             <div class="about-container">
-                <h4>About</h4>
-                <p>Hi. My name is Brian and I am a JavaScript developer.</p>
+                <h3>About</h3>
+                <p>Hi. My name is Brian. I am a web developer and I love Javascript.
+                Originally from Columbus, Georgia, I am currently living in Nashville.</p>
+                <div class="about--img-container">
+                    <img class="ang-img" src="./img/javascript.png" />
+                    <img class="node-img" src="./img/angular.png" />
+                    <img class="node-img" src="./img/node.png" />
+                </div>
             </div>
         </div>
         <div class="portfolio-grid">
-            <div class="portfolio-title"><h4>Things I've Built</h4></div>
+            <div class="portfolio-title"><h3>Things I've Built</h3></div>
             <div class="content clearfix">
-                <div class="portfolio-container"></div>
-                <div class="portfolio-container"></div>
-                <div class="portfolio-container"></div>
-                <div class="portfolio-container"></div>
-                <div class="portfolio-container"></div>
-                <div class="portfolio-container"></div>
+                <div class="portfolio-container weather">
+                    <img src="https://cloud.githubusercontent.com/assets/7670539/9594662/6099ba0a-5023-11e5-9012-fe887e6bcb9b.png" />
+                </div>
+                <div class="portfolio-container angular-movie">
+                    <img src="https://cloud.githubusercontent.com/assets/7670539/9594825/0137cffe-5026-11e5-8b62-ef8509bbdf73.png" />
+                </div>
+                <div class="portfolio-container tuthub">
+                    <img src="https://cloud.githubusercontent.com/assets/7670539/9590710/feb6a40a-4ffb-11e5-8199-13c464a494d4.png" />
+                </div>
             </div>
         </div>
         <div class="footer-container">
+                <a href="https://github.com/bmacheski" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/pub/brian-macheski/104/902/4b2" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:bwm0007@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
             <p> © 2015 Brian Macheski</p>
         </div>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -53,5 +61,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        <script src="lib/build.js"></script>
     </body>
 </html>
