@@ -19,8 +19,8 @@ gulp.task('bower', function () {
     .pipe(gulp.dest('public/lib'))
 });
 
-gulp.task('clean', function () {
-  del('public')
+gulp.task('clean', function (cb) {
+  del(['public/'], cb)
 });
 
 gulp.task('copy', function () {
