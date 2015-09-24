@@ -43,6 +43,12 @@ p {
   padding-left: 50px;
   max-width: 200px; }
 
+.description {
+  margin-top: 5px;
+  text-align: center; }
+  .description p {
+    font-size: 20px; }
+
 .footer-container {
   margin-top: 100px; }
 
@@ -71,10 +77,10 @@ p {
   padding-left: 40px; }
 
 .weather, .angular-movie, .tuthub {
-  border: 3px solid black;
   position: relative; }
   .weather img, .angular-movie img, .tuthub img {
     width: 100%;
+    border: 3px solid black;
     position: relative; }
 
 .portfolio {
