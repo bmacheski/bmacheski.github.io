@@ -1,1 +1,0 @@
-# bmacheski.github.io
