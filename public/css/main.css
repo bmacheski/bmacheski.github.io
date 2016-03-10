@@ -76,11 +76,10 @@ p {
   width: 230px;
   padding-left: 40px; }
 
-.weather, .angular-movie, .tuthub {
+.repo, .angular-movie, .tuthub {
   position: relative; }
-  .weather img, .angular-movie img, .tuthub img {
+  .repo img, .angular-movie img, .tuthub img {
     width: 100%;
-    border: 3px solid black;
     position: relative; }
 
 .portfolio {
@@ -100,3 +99,12 @@ p {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px; }
+
+@media (max-width: 600px) {
+  .about-container {
+    height: 1000px !important; }
+  .about-container div {
+    display: block;
+    margin-left: 30px !important; }
+  .footer-container {
+    margin-right: 100px; } }
